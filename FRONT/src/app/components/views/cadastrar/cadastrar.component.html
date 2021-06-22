@@ -1,0 +1,19 @@
+<h1>Cadastrar Produto</h1>
+
+<!-- <form class="cadastrar-form">
+    <mat-form-field class="cadastrar-width">
+        <mat-label>Teste:</mat-label>
+        <input type="text" name="nome" [(ngModel)]="produto.nome"/><br>
+    </mat-form-field>
+</form> -->
+
+<label for="nome">Nome:</label>
+
+<label for="codigoBarras">Código de Barras:</label>
+<input type="text" name="codigoBarras" [(ngModel)]="produto.codigoBarras"/><br>
+
+<label for="preco">Preço:</label>
+<input type="number" name="preco" [(ngModel)]="produto.preco"/>
+
+<br/>
+<button (click)="cadastrar()">Cadastrar</button>
