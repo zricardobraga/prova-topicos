@@ -6,7 +6,6 @@ Content-Type: application/json
     "nome": "Feijão",
     "codigoBarras": "123456789001",
     "preco": 11,
-    "criadoEm": "2021/06/21"
 }
 
 ###

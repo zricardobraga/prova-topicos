@@ -16,8 +16,9 @@ const produtoSchema = new Schema({
     },
 
     criadoEm: {
-        type: Date
-    },
+        type: Date,
+        defaut: Date.now,
+     },
 },
 );
 
