@@ -11,7 +11,18 @@ export class ProdutoService {
 
     constructor(private http: HttpClient){}
 
+<<<<<<< HEAD
     cadastrar(produto: Produto): Observable<Produto>{
         return this.http.post<Produto>(`${this.baseURL}produto/cadastrar`, produto);
     }
 }
+=======
+    listar(): Observable<Produto[]>{
+      return this.http.get<Produto[]>(`${this.baseURL}produto/listar`); // detalhe importante: nessa linha está sendo interpolada a variável baseURL com o "caminho" ciclo/listar
+    }
+
+    cadastrar(produto: Produto): Observable<Produto>{
+        return this.http.post<Produto>(`${this.baseURL}produto/cadastrar`, produto);
+    }
+}
+>>>>>>> 4b6d61f3b7298d9321e0411e39c8727b6d6fdcbb

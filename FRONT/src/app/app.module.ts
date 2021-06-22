@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { CadastrarComponent } from './components/views/cadastrar/cadastrar.component';
+import { ListarComponent } from './components/views/listar/listar.component';
 import { ContentComponent } from './components/template/content/content.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,11 +16,14 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormField } from '@angular/material/form-field'
+import { HeaderComponent } from './components/template/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CadastrarComponent,
+    ListarComponent,
+    HeaderComponent,
     ContentComponent
   ],
   imports: [
