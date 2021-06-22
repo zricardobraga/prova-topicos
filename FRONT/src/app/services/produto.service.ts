@@ -7,12 +7,12 @@ import { Observable } from 'rxjs';
     providedIn: 'root'
 })
 export class ProdutoService {
-    private baseURL = "ttp://localhost:3000/";
+    private baseURL = "http://localhost:3000/";
 
     constructor(private http: HttpClient){}
 
     listar(): Observable<Produto[]>{
-      return this.http.get<Produto[]>(`${this.baseURL}produto/listar`); // detalhe importante: nessa linha está sendo interpolada a variável baseURL com o "caminho" ciclo/listar
+      return this.http.get<Produto[]>(`${this.baseURL}produto/listar`);
     }
 
     cadastrar(produto: Produto): Observable<Produto>{

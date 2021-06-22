@@ -11,7 +11,7 @@ import { MatTableDataSource } from '@angular/material/table';
 
 export class ListarComponent implements OnInit {
   produtos!: MatTableDataSource<Produto>;
-  displayedColumns: string[] = ['id', 'nome', 'codigoBarras', 'preco', 'criadoEm'];
+  displayedColumns: string[] = ['_id','nome', 'codigoBarra', 'preco', 'criadoEm'];
 
   constructor(private service: ProdutoService) {}
 

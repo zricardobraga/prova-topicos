@@ -1,7 +1,7 @@
 export class Produto {
-    _id!: string;
+    _id?: string;
     nome!: string;
     codigoBarras!: string;
     preco!: number;
-    createdAt!: Date;
+    criadoEm?: Date;
 }
